@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+
+    <item
+        android:id="@+id/arabicQuran"
+        android:title="Complete Quran in Arabic" />
+
+    <item
+        android:id="@+id/urduQuran"
+        android:title="Complete Quran in Urdu" />
+
+    <item
+        android:id="@+id/engQuran"
+        android:title="Complete Quran in English" />
+
+    <item
+        android:id="@+id/paraQuran"
+        android:title="Quran by Para" />
+
+    <item
+        android:id="@+id/nav_return"
+        android:title="Return" />
+
+</menu>

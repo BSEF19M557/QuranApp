@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">القرآن</string>
+    <string name="empty" />
+    <string name="placeholder_text">placeholder_text</string>
+    <string name="get_all">Get All</string>
+    <string name="add">Add</string>
+    <string name="name">Name</string>
+    <string name="roll_number">Roll Number</string>
+    <string name="enrolled">Enrolled</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+</resources>

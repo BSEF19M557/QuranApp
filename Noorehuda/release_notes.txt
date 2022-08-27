@@ -1,0 +1,18 @@
+****************************************************************************************
+
+RELEASE NOTE 
+
+1.	Quran Databse in MS Access format contains Quranic text in Indo-Pak Script (Quranic Script mostly used in Non-Arab World, Urdu Translations of Hadhrat Maulana Fateh Muhammad Jalandhriand, Hadhrat Maulana Mehmood-ul-Hassan and English Translations of Dr. Mohsin Khan and Mufti Taqi Usmani. We present this document after fully cared proof reading / verification by Qualified persons.
+
+2.	NooreHuda.ttf Version 1.001 is used in this document which is completely ligatured free. Please note that this document require special Quranic Font such as noorehuda.ttf Version 1.001, noorehira.ttf version 2.001. Unicode Values used in these fonts are based on Urdu Characters but it also support Arabic Characters Values. Use Phonetic Urdu Key Board for Search operations.
+
+3.	Copy / distribution of this document / font without any modification in non-commercial projects is completely allowed with request of a back link to www.noorehidayat.org. For commercial purposes please contact at quran@noorehidayat.org.
+
+4.	Please make sure presence of this release note in all copies derived from this document.
+
+5.	For updates / progress towards Quranic Projects / Fonts please be in touch with www.noorehidayat.org
+
+
+****************************************************************************************
+www.noorehidayat.org
+quran@noorehidayat.org
