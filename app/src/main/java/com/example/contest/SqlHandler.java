@@ -130,4 +130,22 @@ public class SqlHandler extends SQLiteAssetHelper {
         return SurahArrayList;
     }
 
+    public  ArrayList<String> getQuranEngUrdu(String type){
+        ArrayList Arabic=getQuran("A");
+        ArrayList rTranslation=getQuran(type);
+
+        ArrayList<String> arabicEngUrdu=new ArrayList<>();
+
+        int index=0;
+        while (Arabic.size()>index ||rTranslation.size()>index){
+
+            arabicEngUrdu.add(Arabic.get(index).toString());
+            arabicEngUrdu.add(rTranslation.get(index).toString());
+            index++;
+        }
+
+
+        return arabicEngUrdu;
+    }
+
 }

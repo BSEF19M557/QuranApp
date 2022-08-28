@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Contest">
         <activity
+            android:name=".ArabicWithUrduEng"
+            android:exported="false" />
+        <activity
             android:name=".paraActivity"
             android:exported="false" />
         <activity

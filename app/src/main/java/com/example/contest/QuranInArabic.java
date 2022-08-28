@@ -24,6 +24,7 @@ public class QuranInArabic extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quran_in_arabic);
+
         listViewQuran=findViewById(R.id.QuranList);
         Intent intent=getIntent();
         String type=intent.getStringExtra("type");
@@ -46,8 +47,10 @@ public class QuranInArabic extends AppCompatActivity {
 
                 if(type.equals("E"))
                     tv.setTypeface(Typeface.createFromAsset(getAssets(),"tnr.ttf"));
-                else
+                else if(type.equals("A"))
                     tv.setTypeface(Typeface.createFromAsset(getAssets(),"noorehuda.ttf"));
+                else
+                    tv.setTypeface(Typeface.createFromAsset(getAssets(),"JameelNooriNastaleeq.ttf"));
 
                 ViewGroup.LayoutParams params = tv.getLayoutParams();
                 params.height = ViewGroup.LayoutParams.WRAP_CONTENT;

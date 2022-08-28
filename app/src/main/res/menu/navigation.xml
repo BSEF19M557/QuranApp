@@ -17,6 +17,13 @@
         android:title="Complete Quran in English" />
 
     <item
+        android:id="@+id/quranWithUrdu"
+        android:title="Complete Quran with Urdu" />
+    <item
+        android:id="@+id/quranWithEng"
+        android:title="Complete Quran with English" />
+
+    <item
         android:id="@+id/paraQuran"
         android:title="Quran by Para" />
 

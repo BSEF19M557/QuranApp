@@ -144,6 +144,18 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     drawerLayout.closeDrawer(GravityCompat.START);
                     break;
+                case R.id.quranWithUrdu:
+                    intent = new Intent(MainActivity.this, ArabicWithUrduEng.class);
+                    intent.putExtra("type","U");
+                    startActivity(intent);
+                    drawerLayout.closeDrawer(GravityCompat.START);
+                    break;
+                case R.id.quranWithEng:
+                    intent = new Intent(MainActivity.this, ArabicWithUrduEng.class);
+                    intent.putExtra("type","E");
+                    startActivity(intent);
+                    drawerLayout.closeDrawer(GravityCompat.START);
+                    break;
                 case R.id.paraQuran:
                     intent = new Intent(MainActivity.this, QuranByPara.class);
                     startActivity(intent);

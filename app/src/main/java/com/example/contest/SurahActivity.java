@@ -39,7 +39,7 @@ public class SurahActivity extends AppCompatActivity {
         int suratPosition = 1+intent.getIntExtra("suratPosition", -1);
 
         suratNameView.setText(suratName);
-        suratNameView.setTypeface(Typeface.createFromAsset(getAssets(),"noorehuda.ttf"));
+        suratNameView.setTypeface(Typeface.createFromAsset(getAssets(),"JameelNooriNastaleeq.ttf"));
 
 
 
