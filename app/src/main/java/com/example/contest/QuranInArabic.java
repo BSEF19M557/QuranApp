@@ -45,10 +45,14 @@ public class QuranInArabic extends AppCompatActivity {
                 tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP,25);
                 tv.setTextAlignment(View.TEXT_DIRECTION_ANY_RTL);
 
-                if(type.equals("E"))
-                    tv.setTypeface(Typeface.createFromAsset(getAssets(),"tnr.ttf"));
-                else if(type.equals("A"))
-                    tv.setTypeface(Typeface.createFromAsset(getAssets(),"noorehuda.ttf"));
+                if(type.equals("E")) {
+                    tv.setTypeface(Typeface.createFromAsset(getAssets(), "tnr.ttf"));
+                    tv.setTypeface(tv.getTypeface(),Typeface.ITALIC);
+                }
+                else if(type.equals("A")) {
+                    tv.setTypeface(Typeface.createFromAsset(getAssets(), "noorehuda.ttf"));
+                    tv.setTypeface(tv.getTypeface(),Typeface.BOLD);
+                }
                 else
                     tv.setTypeface(Typeface.createFromAsset(getAssets(),"JameelNooriNastaleeq.ttf"));
 

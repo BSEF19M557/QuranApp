@@ -28,30 +28,7 @@ public class ArabicWithUrduEng extends AppCompatActivity {
 
         SqlHandler sqlHandler=new SqlHandler(this);
 
-        ArrayAdapter<String> listViewQuranAdapter = new ArrayAdapter(this, android.R.layout.simple_expandable_list_item_1, sqlHandler.getQuranEngUrdu(type)){
-            @Override
-            public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-
-                View view = super.getView(position, convertView, parent);
-
-                TextView tv = (TextView) view.findViewById(android.R.id.text1);
-
-                // Set the text size 25 dip for ListView each item
-                tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP,25);
-                tv.setTextAlignment(View.TEXT_DIRECTION_ANY_RTL);
-
-
-                    tv.setTypeface(Typeface.createFromAsset(getAssets(),"noorehuda.ttf"));
-
-
-                ViewGroup.LayoutParams params = tv.getLayoutParams();
-                params.height = ViewGroup.LayoutParams.WRAP_CONTENT;
-                tv.setLayoutParams(params);
-
-                // Return the view
-                return view;
-            }
-        };
+        QuranWithTranslationAdopter listViewQuranAdapter = new QuranWithTranslationAdopter(this,sqlHandler.getArabicUrduOrEng(type),type);
 
         listViewQuranEngUrdu.setAdapter(listViewQuranAdapter);
 
