@@ -28,6 +28,9 @@
         android:title="Quran by Para" />
 
     <item
+        android:id="@+id/new_version"
+        android:title="New Version" />
+    <item
         android:id="@+id/nav_return"
         android:title="Return" />
 

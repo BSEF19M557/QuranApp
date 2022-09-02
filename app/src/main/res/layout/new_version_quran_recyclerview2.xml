@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout2"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="5dp"
+        android:id="@+id/Aaya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:text="names"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/Uaya"
+        android:layout_marginHorizontal="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#272626"
+        android:textAlignment="center"
+        android:text="names"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/Eaya"
+        android:layout_marginHorizontal="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#272626"
+        android:textAlignment="center"
+        android:text="names"
+        android:layout_marginBottom="20dp"/>
+
+    <TableRow
+        android:id="@+id/hr"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#040404"/>
+
+
+
+</LinearLayout>

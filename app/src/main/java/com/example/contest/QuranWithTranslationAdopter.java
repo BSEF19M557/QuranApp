@@ -63,7 +63,7 @@ public class QuranWithTranslationAdopter extends ArrayAdapter<ArabicWithTranslat
         }
         else {
             textView2.setTypeface(Typeface.createFromAsset(getContext().getAssets(), "JameelNooriNastaleeq.ttf"));
-            textView2.setTextAlignment(View.TEXT_DIRECTION_ANY_RTL);
+            textView2.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
         }
 
 

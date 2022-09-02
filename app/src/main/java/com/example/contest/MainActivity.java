@@ -161,6 +161,11 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                     drawerLayout.closeDrawer(GravityCompat.START);
                     break;
+                case R.id.new_version:
+                    intent = new Intent(MainActivity.this, NewVersionMainActivity.class);
+                    startActivity(intent);
+                    drawerLayout.closeDrawer(GravityCompat.START);
+                    break;
 
                 case R.id.nav_return:
                     drawerLayout.closeDrawer(GravityCompat.START);

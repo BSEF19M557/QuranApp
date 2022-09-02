@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Contest">
         <activity
+            android:name=".NewVersionComQuran"
+            android:exported="false" />
+        <activity
+            android:name=".NewVersionQuranShow"
+            android:exported="false" />
+        <activity
+            android:name=".NewVersionMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".ArabicWithUrduEng"
             android:exported="false" />
         <activity

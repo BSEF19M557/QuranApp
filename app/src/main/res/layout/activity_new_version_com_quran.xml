@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="10dp"
+    tools:context=".NewVersionComQuran"
     android:orientation="vertical">
-
     <TextView
-        android:layout_marginBottom="4dp"
-        android:id="@+id/arabicText"
+        android:id="@+id/titleName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Arabic text"
-        android:textSize="25dp"
+        android:text="SuraName"
+        android:textSize="35dp"
         android:textAlignment="center"
         android:textColor="@color/black"/>
-    <TextView
-        android:id="@+id/urduOrEng"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Translation"
-        android:textSize="25dp"
-        android:textColor="#E6100F0F"
-        android:layout_marginBottom="4dp"/>
     <TableRow
         android:id="@+id/hr"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="3dp"
         android:background="#040404"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview2"/>
 
 </LinearLayout>

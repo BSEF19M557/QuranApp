@@ -79,6 +79,36 @@ public class SqlHandler extends SQLiteAssetHelper {
         return SurahArrayList;
     }
 
+    public ArrayList<String> getSurah(int surahIndex,String type) {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursorCourses =null;
+        if(type.equals("A")){
+            cursorCourses =db.rawQuery("SELECT [Arabic Text] FROM tayah WHERE SuraID='"+surahIndex+"' ORDER BY AyaID", null);
+        }
+        else if(type.equals("E")){
+            cursorCourses =db.rawQuery("SELECT [Mufti Taqi Usmani] FROM tayah WHERE SuraID='"+surahIndex+"' ORDER BY AyaID", null);
+        }
+        else {
+            cursorCourses =db.rawQuery("SELECT [Mehmood ul Hassan] FROM tayah WHERE SuraID='"+surahIndex+"' ORDER BY AyaID", null);
+        }
+
+        ArrayList<String> SurahArrayList = new ArrayList<>();
+
+        // moving our cursor to first position.
+        if (cursorCourses.moveToFirst()) {
+            do {
+
+                SurahArrayList.add(cursorCourses.getString(0));
+            } while (cursorCourses.moveToNext());
+
+        }
+
+        cursorCourses.close();
+        return SurahArrayList;
+    }
+
     public ArrayList<String> getCompletePara(int paraIndex) {
 
         SQLiteDatabase db = this.getReadableDatabase();
@@ -99,6 +129,37 @@ public class SqlHandler extends SQLiteAssetHelper {
         cursorCourses.close();
         return SurahArrayList;
     }
+
+    public ArrayList<String> getCompletePara(int paraIndex,String type) {
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursorCourses=null;
+        if(type.equals("A")){
+            cursorCourses = db.rawQuery("SELECT [Arabic Text] FROM tayah WHERE ParaID='"+paraIndex+"' ORDER BY AyaID", null);
+        }
+        else if(type.equals("E")){
+            cursorCourses = db.rawQuery("SELECT [Mufti Taqi Usmani] FROM tayah WHERE ParaID='"+paraIndex+"' ORDER BY AyaID", null);
+        }
+        else {
+            cursorCourses = db.rawQuery("SELECT [Mehmood ul Hassan] FROM tayah WHERE ParaID='"+paraIndex+"' ORDER BY AyaID", null);
+
+        }
+
+        ArrayList<String> SurahArrayList = new ArrayList<>();
+
+        // moving our cursor to first position.
+        if (cursorCourses.moveToFirst()) {
+            do {
+
+                SurahArrayList.add(cursorCourses.getString(0));
+            } while (cursorCourses.moveToNext());
+
+        }
+
+        cursorCourses.close();
+        return SurahArrayList;
+    }
+
 
     public ArrayList<String> getQuran(String type) {
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/nav_sEng"
+        android:title="Turn off English" />
+    <item
+        android:id="@+id/nav_sUrdu"
+        android:title="Turn Off Urdu" />
+    <item
+        android:id="@+id/nva_font"
+        android:title="Font size Normal" />
+    <item
+        android:id="@+id/nav_return"
+        android:title="Return"/>
+
+</menu>
